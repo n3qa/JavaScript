@@ -35,7 +35,8 @@ function IncreasingSubsequencefromArrReduceSolution(arr){
     
     arr.reduce(function(result,currentValue){
         if(currentValue >= result.length -1 || result.length === 0) {
-            result.push(currentValue)
+          let element = result.push(currentValue)
+          console.log( element , result)
         }
         return result;
     },[])
