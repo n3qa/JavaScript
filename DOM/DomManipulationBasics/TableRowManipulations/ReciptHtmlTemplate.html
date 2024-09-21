@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to DOM manipulation A7</title>
+</head>
+<body>
+    <h1>Dom Table manipulation</h1>
+    <h2> Calulate specific row with prise total sum </h2>
+
+     <table border="1">
+       <thead>
+            <tr>
+                <tr>Product </tr>
+            </tr>
+            <tr>
+                <tr>Price</tr>
+            </tr>
+       </thead>
+       <tbody>
+            <!-- First row with data -->
+            <tr>
+                <td>Beer </td>
+                <td>2.75</td>
+            </tr>
+
+            <!-- Second row with data -->
+            <tr>
+                <td>Coca-Cola </td>
+                <td>1.5</td>
+            </tr>
+
+            <!-- Third row with data -->
+            <tr>
+                <td>Caffee </td>
+                <td>1</td>
+            </tr>
+
+            <!-- First row with data -->
+            <tr>
+                <td>Mineral water  </td>
+                <td>1.5 </td>
+            </tr>
+
+            <tr></tr>
+                <td>Total sum:  </td>
+                <td id="sum"> </td>
+            </tr>
+       </tbody>
+      
+     </table>
+
+     <button onclick="sumProducts()"> Calulate total table</button>
+     <script src="sumProducts.js"></script>
+
+</body>
+</html>

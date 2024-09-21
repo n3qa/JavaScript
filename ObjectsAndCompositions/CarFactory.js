@@ -35,13 +35,4 @@ return{
     model: InputDeviceInfo.model,
     engine: getEngine(input.power)
 }
-console.log(
-    carFactory(
-        { model: <model name>,
-            power: <minimum power>,
-            color: <color>,
-            carriage: <carriage type>,
-            wheelsize: <size> }
-          
-    )
-)
+ 
