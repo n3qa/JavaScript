@@ -21,20 +21,19 @@ function solve() {
          for (const worker of workersArr) {
             let workerTokens = worker.split(' ');
             const salary = Number(workerTokens[1]);
-            workersArr.push({
-               name: workerTokens[0];
-               salary;
-            })
+            workersArr.push({ name: workerTokens[0],salary })
          } 
+
+         restaurants[name] = {
+            workers,
+            avarageSalary,
+   
+         }
 
        } 
       );
 
-      restaurants[name] = {
-         workers,
-         avarageSalary,
-
-      }
+     
       
    }
 }
