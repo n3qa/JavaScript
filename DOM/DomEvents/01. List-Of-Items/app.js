@@ -12,4 +12,7 @@ function addItem() {
 
    //apend new element to list
    ulElement.appendChild(liElement)
+
+   //Clear the input field after an item is being added
+   document.getElementById('newItemText').value = '';
 }
