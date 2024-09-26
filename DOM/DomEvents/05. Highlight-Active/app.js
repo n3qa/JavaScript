@@ -11,6 +11,6 @@ function focused() {
     }
 
     function onBlur (ev){
-        ev.target.parentNode.className() = 'blured';
+        ev.target.parentNode.className() = '';
     }
 }
