@@ -1,9 +1,16 @@
 function addItem() {
-   const liElement = document.createElement('li');
-   liElement.textContent = document.getElementById('newText').value;
-
+   const input = document.getElementById('newText');
+   const liElement =  createElement('li',input.value)
+   
    document.getElementById('items').appendChild(liElement);
-   document.getElementById('newText').value='';
+   input.value='';
+
+   function createElement(type,content){
+    const element = document.createElement(type);
+    element.textContent = content;
+    return element;
+
+   }
 
 }
 
