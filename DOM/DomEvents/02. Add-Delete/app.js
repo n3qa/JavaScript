@@ -1,6 +1,13 @@
 function addItem() {
    const input = document.getElementById('newText');
-   const liElement =  createElement('li',input.value)
+   const liElement =  createElement('li',input.value);
+
+   deleteBtn = createElement('a','[Delete]');
+   deleteBtn.href = '#';
+   deleteBtn.addEventListner('click',(ev)=> {
+    ev.target.parentNode.remove();
+   });
+   liElement.appendChild(deleteBtn);
    
    document.getElementById('items').appendChild(liElement);
    input.value='';
