@@ -15,11 +15,13 @@ function areNVolumeCalc(area, vol, dataJSON){
         result.push(output)
     }
 
+    return result;
+
 }
 
 const example1 = '[{"x":"1","y":"2","z":"10"},{"x":"7","y":"7","z":"10"},{"x":"5","y":"2","z":"10"}]';
 
-areNVolumeCalc(area, vol, example1);
+console.log(areNVolumeCalc(area, vol, example1));
 
 function are(){
     return this.x  * this.y;
