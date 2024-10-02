@@ -61,6 +61,4 @@ function create(words) {
 
       return result;
    }
- 
-
 }
